@@ -6,26 +6,21 @@ Email automation is a process of sending emails automatically based on certain t
 **Prerequisites**:
 - A Google account
 - Basic knowledge of JavaScript and HTML
-- A GitHub account and repository
 
 **Setup**:
 
 1. **Create a Google Script Project**:
    - Go to the Google Script Editor (https://script.google.com/).
    - Click on the "+" button to create a new project.
-   - Name your project, for example, "GitHub Email Automation."
+   - Name your project, for example, "Email Automation."
 
-2. **Enable GitHub API**:
-   - Go to the GitHub Developer Settings page (https://github.com/settings/developers).
-   - Create a new OAuth App and note down the Client ID and Client Secret.
-
-3. **Authorize Script**:
+2. **Authorize Script**:
    - In your Google Script project, go to "Resources" > "Libraries."
    - Click on "Add a library" and search for "OAuth2."
    - Select "OAuth2 for Apps Script" and click "Add."
    - Click on "Authorize" and follow the instructions to authorize your script.
 
-4. **Set Up Trigger**:
+3. **Set Up Trigger**:
    - In your script, go to "Edit" > "Current project's triggers."
    - Click on "Add Trigger" and select "Time-driven."
    - Set the desired frequency for your email triggers (e.g., daily).
@@ -47,12 +42,6 @@ Email automation is a process of sending emails automatically based on certain t
    - In your script project, go to "Publish" > "Deploy as web app."
    - Select "Execute as me" and click on "Deploy."
    - Copy the web app URL.
-
-2. **GitHub Webhook**:
-   - Go to your GitHub repository settings.
-   - Under "Webhooks," click on "Add webhook."
-   - Enter a title, the web app URL, and select "application/json" as the Content type.
-   - Click on "Save."
 
 **Testing**:
 1. **Trigger Event**:
